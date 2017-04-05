@@ -226,10 +226,10 @@ class KicadSpiceFix(object):
 
     def write_and_run(self, filename):
         self.write(filename)
-        process = sp.Popen(['ngspice', '-b', 't2.cir'], stdout=sp.PIPE, stderr=sp.PIPE)
+        process = sp.Popen(['ngspice', '-b', filename], stdout=sp.PIPE, stderr=sp.PIPE)
         stdout, stderr = process.communicate()
-        print("#" * 10 + "STDOUT" + "#" * 10)
-        print(stdout.decode('utf-8'))
+        #print("#" * 10 + "STDOUT" + "#" * 10)
+        #print(stdout.decode('utf-8'))
         print("#" * 10 + "STDERR" + "#" * 10)
         print(stderr.decode('utf-8'))
 
@@ -263,13 +263,21 @@ def read_wrdata_file(filename, nodes):
     return array[:, 0], V, I
 
 
-def plot_all(Vc, V, I):
+def plot_all(x, V, I, from_to=None, marker=None):
+    if from_to is None:
+        start, end = 0, len(x)
+    else:
+        start = (x >= from_to[0]).nonzero()[0][0]
+        end = (x > from_to[1]).nonzero()[0][0]
+
     plt.figure()
     plt.subplot(2,1,1)
     for name, vector in V.items():
-        plt.plot(Vc, vector, label="V"+name)
+        plt.plot(x[start:end], vector[start:end], label="V"+name, marker=marker)
     plt.legend()
+    plt.ylabel('Volts')
     plt.subplot(2,1,2)
     for name, vector in I.items():
-        plt.plot(Vc, vector, label="I"+name)
+        plt.plot(x[start:end], vector[start:end], label="I"+name, marker=marker)
     plt.legend()
+    plt.ylabel('Amps')
