@@ -1,6 +1,7 @@
 import re
 import subprocess as sp
-
+import glob
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -160,7 +161,7 @@ def module(device_type, device_num, parts):
 
 def transistor(device_type, device_num, parts):
     param = parts[-1]
-    if param in ['IRF540N']:
+    if param in ['IRF540N', 'IRFB7546PBF']:
         return TransModule(device_type, device_num, parts)
     else:
         return Transistor(device_type, device_num, parts)
@@ -228,10 +229,12 @@ class KicadSpiceFix(object):
         self.write(filename)
         process = sp.Popen(['ngspice', '-b', filename], stdout=sp.PIPE, stderr=sp.PIPE)
         stdout, stderr = process.communicate()
-        #print("#" * 10 + "STDOUT" + "#" * 10)
-        #print(stdout.decode('utf-8'))
-        print("#" * 10 + "STDERR" + "#" * 10)
-        print(stderr.decode('utf-8'))
+        if stderr != b'\nNote: No ".plot", ".print", or ".fourier" lines; no simulations run\n':
+            print("#" * 10 + "STDOUT" + "#" * 10)
+            print(stdout.decode('utf-8'))
+            print("#" * 10 + "STDERR" + "#" * 10)
+            print(stderr.decode('utf-8'))
+            #raise Exception("bad output")
 
 
 def make_meas_names(field_names):
@@ -263,21 +266,41 @@ def read_wrdata_file(filename, nodes):
     return array[:, 0], V, I
 
 
-def plot_all(x, V, I, from_to=None, marker=None):
+def delete_all_data_files():
+    for filename in glob.glob("*.data"):
+        os.remove(filename)
+
+
+def plot_all(x, V, I, from_to=None, marker=None, title=None, xlabel=None):
     if from_to is None:
         start, end = 0, len(x)
     else:
         start = (x >= from_to[0]).nonzero()[0][0]
         end = (x > from_to[1]).nonzero()[0][0]
+        print(start, end)
 
     plt.figure()
-    plt.subplot(2,1,1)
-    for name, vector in V.items():
-        plt.plot(x[start:end], vector[start:end], label="V"+name, marker=marker)
-    plt.legend()
-    plt.ylabel('Volts')
-    plt.subplot(2,1,2)
-    for name, vector in I.items():
-        plt.plot(x[start:end], vector[start:end], label="I"+name, marker=marker)
-    plt.legend()
-    plt.ylabel('Amps')
+    if V is not None:
+        if I is not None:
+            plt.subplot(2,1,1)
+        if title is not None:
+            plt.title(title)
+        plt.grid()
+        for name, vector in V.items():
+            label = "$V_{" + name + "}$"
+            plt.plot(x[start:end], vector[start:end], label=label, marker=marker)
+        plt.legend()
+        plt.ylabel('Volts')
+    if I is not None:
+        if V is not None:
+            plt.subplot(2,1,2)
+        else:
+            plt.title(title)
+        plt.grid()
+        for name, vector in I.items():
+            label = "$I_{" + name + "}$"
+            plt.plot(x[start:end], vector[start:end], label=label, marker=marker)
+        plt.legend()
+        plt.ylabel('Amps')
+    if xlabel is not None:
+        plt.xlabel(xlabel)
