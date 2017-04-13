@@ -48,6 +48,10 @@ class Device(object):
     def fix_net(name):
         if name[0] == '/':
             return name[1:]
+        if name[0] == '+':
+            return 'p_' + name[1:]
+        if name[0] == '-':
+            return 'n_' + name[1:]
         if name in ['GND', 'VCC']:
             return name
         dev, pad = Device.net_re.match(name).groups()
@@ -186,7 +190,6 @@ class KicadSpiceFix(object):
 
 
     def __init__(self, filename):
-        self._subs = {}
         self._filename = filename
         self._devices = {}
         self._extras = {}
