@@ -184,7 +184,7 @@ U 1 1 58E84B75
 P 10000 4250
 F 0 "J5" H 10000 4350 50  0000 C CNN
 F 1 "CONN_01X01" V 10200 4250 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 10000 4250 50  0001 C CNN
+F 2 "connectors:small_SWP_single_1-5mmDrill" H 10000 4250 50  0001 C CNN
 F 3 "" H 10000 4250 50  0001 C CNN
 	1    10000 4250
 	0    1    1    0   
@@ -261,7 +261,7 @@ Connection ~ 8950 2100
 Wire Wire Line
 	7050 1100 7050 1250
 Wire Wire Line
-	6250 4650 8650 4650
+	6950 4650 8650 4650
 Wire Wire Line
 	10300 2200 10300 2700
 Wire Wire Line
@@ -499,5 +499,31 @@ F 3 "" H 4300 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1400 2050 0    60   ~ 0
-This is the loading to use the board just as a switch - without any regulation.\nComponents not shown are not loaded.\nA wire must be run from the Q2 gate (use R6 pad) to the Q3 collector (use Q1 pin 1) 
+This is the loading to use the board just as a switch - without any regulation.\nComponents not shown are not loaded.\nR6 (not loaded in the regulator configuration) provides the signal path.\nNote that for the switch configuration, enable is active low - not active high. 
+$Comp
+L R R6
+U 1 1 59190723
+P 6800 4650
+F 0 "R6" V 6880 4650 50  0000 C CNN
+F 1 "0R" V 6800 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6730 4650 50  0001 C CNN
+F 3 "" H 6800 4650 50  0001 C CNN
+	1    6800 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 4650 6650 4650
+Text Label 6350 4650 0    60   ~ 0
+direct
+$Comp
+L CONN_01X01 J10
+U 1 1 59190B57
+P 10100 2350
+F 0 "J10" H 10100 2450 50  0000 C CNN
+F 1 "CONN_01X01" V 10300 2350 50  0000 C CNN
+F 2 "connectors:small_SWP_single_1-5mmDrill" H 10100 2350 50  0001 C CNN
+F 3 "" H 10100 2350 50  0001 C CNN
+	1    10100 2350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

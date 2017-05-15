@@ -346,8 +346,6 @@ Text Notes 1400 800  0    60   ~ 0
 Reference
 Text Label 2550 1950 0    60   ~ 0
 ref
-Text Label 6500 3700 0    60   ~ 0
-drive
 $Comp
 L R R12
 U 1 1 58E532DB
@@ -393,7 +391,7 @@ F 3 "" H 4050 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 5450 3700 0    60   ~ 0
-error
+drive
 $Comp
 L Screw_Terminal_1x02 J1
 U 1 1 58E69FBE
@@ -489,7 +487,7 @@ U 1 1 58E84B75
 P 10000 4250
 F 0 "J5" H 10000 4350 50  0000 C CNN
 F 1 "CONN_01X01" V 10200 4250 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 10000 4250 50  0001 C CNN
+F 2 "connectors:small_SWP_single_1-5mmDrill" H 10000 4250 50  0001 C CNN
 F 3 "" H 10000 4250 50  0001 C CNN
 	1    10000 4250
 	0    1    1    0   
@@ -634,7 +632,7 @@ Wire Wire Line
 Connection ~ 7050 1100
 Connection ~ 4350 1600
 Wire Wire Line
-	6850 4350 6850 4650
+	6850 3700 6850 5350
 Wire Wire Line
 	1450 1550 1450 1850
 Wire Wire Line
@@ -690,10 +688,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 3700 8950 3700
 Connection ~ 8950 3700
-Wire Wire Line
-	6850 3700 6850 3700
-Wire Wire Line
-	6850 3700 6850 4050
 Connection ~ 6850 3700
 Wire Wire Line
 	4450 3700 6000 3700
@@ -902,12 +896,13 @@ $EndComp
 $Comp
 L R R6
 U 1 1 58EFCB12
-P 6850 4200
-F 0 "R6" V 6930 4200 50  0000 C CNN
-F 1 "1R" V 6850 4200 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6780 4200 50  0001 C CNN
-F 3 "" H 6850 4200 50  0001 C CNN
-	1    6850 4200
+P 6850 5500
+F 0 "R6" V 6930 5500 50  0000 C CNN
+F 1 "0R" V 6850 5500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6780 5500 50  0001 C CNN
+F 3 "" H 6850 5500 50  0001 C CNN
+F 4 "true" V 6850 5500 60  0001 C CNN "not fitted"
+	1    6850 5500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -977,5 +972,25 @@ F 2 "" H 10150 5650 50  0001 C CNN
 F 3 "" H 10150 5650 50  0001 C CNN
 	1    10150 5650
 	-1   0    0    -1  
+$EndComp
+Connection ~ 6850 4650
+Text Label 6300 5650 0    60   ~ 0
+direct
+Wire Wire Line
+	6850 5650 6300 5650
+Text Label 2050 5850 0    60   ~ 0
+direct
+Text Notes 5750 5900 0    60   ~ 0
+R6 is not fitted unless we are loading\nthe board in the switch-only configuration
+$Comp
+L CONN_01X01 J10
+U 1 1 59190BBD
+P 10100 2350
+F 0 "J10" H 10100 2450 50  0000 C CNN
+F 1 "CONN_01X01" V 10300 2350 50  0000 C CNN
+F 2 "connectors:small_SWP_single_1-5mmDrill" H 10100 2350 50  0001 C CNN
+F 3 "" H 10100 2350 50  0001 C CNN
+	1    10100 2350
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
