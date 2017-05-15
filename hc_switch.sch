@@ -1,0 +1,503 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hc_switch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sapflow Measurement Heater Control - Switch Only Config."
+Date ""
+Rev "1.0"
+Comp "USDA Coweeta Hydrologic Laboratory"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D D3
+U 1 1 58C026C5
+P 8950 1600
+F 0 "D3" H 8950 1700 50  0000 C CNN
+F 1 "1N4004" H 8950 1500 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58C05B87
+P 7050 1400
+F 0 "D2" H 7050 1500 50  0000 C CNN
+F 1 "LED" H 7050 1300 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 7050 1400 50  0001 C CNN
+F 3 "" H 7050 1400 50  0001 C CNN
+	1    7050 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R13
+U 1 1 58C062A2
+P 7050 1800
+F 0 "R13" V 7130 1800 50  0000 C CNN
+F 1 "560R" V 7050 1800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6980 1800 50  0001 C CNN
+F 3 "" H 7050 1800 50  0001 C CNN
+	1    7050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF540N Q2
+U 1 1 58C027E1
+P 8850 4600
+F 0 "Q2" H 9100 4675 50  0000 L CNN
+F 1 "irfb7546pbf" H 9100 4350 50  0000 L CNN
+F 2 "connectors:TO-220_Underneath" H 9100 4525 50  0001 L CIN
+F 3 "" H 8850 4600 50  0001 L CNN
+	1    8850 4600
+	1    0    0    -1  
+$EndComp
+Text Label 8950 2700 0    60   ~ 0
+load
+Text Label 7350 4650 0    60   ~ 0
+gate
+$Comp
+L GND #PWR01
+U 1 1 58C07618
+P 8950 5300
+F 0 "#PWR01" H 8950 5050 50  0001 C CNN
+F 1 "GND" H 8950 5150 50  0000 C CNN
+F 2 "" H 8950 5300 50  0001 C CNN
+F 3 "" H 8950 5300 50  0001 C CNN
+	1    8950 5300
+	1    0    0    -1  
+$EndComp
+Text Label 8950 4950 0    60   ~ 0
+S
+$Comp
+L GND #PWR02
+U 1 1 58CCB118
+P 10300 3050
+F 0 "#PWR02" H 10300 2800 50  0001 C CNN
+F 1 "GND" H 10300 2900 50  0000 C CNN
+F 2 "" H 10300 3050 50  0001 C CNN
+F 3 "" H 10300 3050 50  0001 C CNN
+	1    10300 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 58E69FBE
+P 10500 1600
+F 0 "J1" H 10500 1850 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 10350 1600 50  0000 C TNN
+F 2 "ab2_terminal_block:AB2_TB_02_RA_5.08MM_L-GRN" H 10500 1375 50  0001 C CNN
+F 3 "" H 10475 1600 50  0001 C CNN
+	1    10500 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J2
+U 1 1 58E6A08F
+P 10500 2800
+F 0 "J2" H 10500 3050 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 10350 2800 50  0000 C TNN
+F 2 "ab2_terminal_block:AB2_TB_02_RA_5.08MM_L-GRN" H 10500 2575 50  0001 C CNN
+F 3 "" H 10475 2800 50  0001 C CNN
+	1    10500 2800
+	-1   0    0    -1  
+$EndComp
+Text Notes 9200 800  0    60   ~ 0
+Power
+Text Notes 6950 850  0    60   ~ 0
+Pretty
+Text Label 10000 4050 0    60   ~ 0
+enable
+$Comp
+L GND #PWR03
+U 1 1 58E70938
+P 10300 4450
+F 0 "#PWR03" H 10300 4200 50  0001 C CNN
+F 1 "GND" H 10300 4300 50  0000 C CNN
+F 2 "" H 10300 4450 50  0001 C CNN
+F 3 "" H 10300 4450 50  0001 C CNN
+	1    10300 4450
+	-1   0    0    -1  
+$EndComp
+Text Notes 10250 750  0    60   ~ 0
+Connect
+$Comp
+L Screw_Terminal_1x04 J3
+U 1 1 58E79445
+P 10500 3950
+F 0 "J3" H 10500 4400 50  0000 C TNN
+F 1 "Screw_Terminal_1x04" V 10350 3950 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 10500 3525 50  0001 C CNN
+F 3 "" H 10475 4150 50  0001 C CNN
+	1    10500 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J4
+U 1 1 58E7A061
+P 10500 2350
+F 0 "J4" H 10500 2450 50  0000 C CNN
+F 1 "CONN_01X01" V 10700 2350 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 10500 2350 50  0001 C CNN
+F 3 "" H 10500 2350 50  0001 C CNN
+	1    10500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J5
+U 1 1 58E84B75
+P 10000 4250
+F 0 "J5" H 10000 4350 50  0000 C CNN
+F 1 "CONN_01X01" V 10200 4250 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 10000 4250 50  0001 C CNN
+F 3 "" H 10000 4250 50  0001 C CNN
+	1    10000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L BC237 Q3
+U 1 1 58EE3062
+P 6150 5550
+F 0 "Q3" H 6350 5625 50  0000 L CNN
+F 1 "BC337" H 6350 5550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6350 5475 50  0001 L CIN
+F 3 "" H 6150 5550 50  0001 L CNN
+	1    6150 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 58EE3CB4
+P 6250 5050
+F 0 "R17" V 6330 5050 50  0000 C CNN
+F 1 "0R" V 6250 5050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6180 5050 50  0001 C CNN
+F 3 "" H 6250 5050 50  0001 C CNN
+	1    6250 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R16
+U 1 1 58EE3E7D
+P 6250 4250
+F 0 "R16" V 6330 4250 50  0000 C CNN
+F 1 "100k" V 6250 4250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6180 4250 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6250 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R15
+U 1 1 58EE3F14
+P 5600 5550
+F 0 "R15" V 5680 5550 50  0000 C CNN
+F 1 "100k" V 5600 5550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5530 5550 50  0001 C CNN
+F 3 "" H 5600 5550 50  0001 C CNN
+	1    5600 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58EE4276
+P 6250 5900
+F 0 "#PWR04" H 6250 5650 50  0001 C CNN
+F 1 "GND" H 6250 5750 50  0000 C CNN
+F 2 "" H 6250 5900 50  0001 C CNN
+F 3 "" H 6250 5900 50  0001 C CNN
+	1    6250 5900
+	-1   0    0    -1  
+$EndComp
+Text Label 5150 5550 0    60   ~ 0
+enable
+Wire Wire Line
+	8950 850  8950 1450
+Wire Wire Line
+	8950 4800 8950 5300
+Connection ~ 8950 1100
+Wire Wire Line
+	8950 1750 8950 4400
+Wire Wire Line
+	7050 1550 7050 1650
+Wire Wire Line
+	7050 1950 7050 2100
+Connection ~ 8950 2100
+Wire Wire Line
+	7050 1100 7050 1250
+Wire Wire Line
+	6250 4650 8650 4650
+Wire Wire Line
+	10300 2200 10300 2700
+Wire Wire Line
+	10300 2900 10300 3050
+Wire Wire Line
+	9750 1100 9750 1500
+Wire Wire Line
+	9750 1500 10300 1500
+Wire Wire Line
+	10300 1700 9750 1700
+Wire Wire Line
+	9750 1700 9750 2100
+Wire Notes Line
+	8550 600  9600 600 
+Wire Notes Line
+	9600 600  9600 5950
+Wire Notes Line
+	9600 5950 8550 5950
+Wire Notes Line
+	8550 5950 8550 600 
+Wire Notes Line
+	6650 600  6650 2500
+Wire Notes Line
+	6650 2500 7500 2500
+Wire Notes Line
+	7500 2500 7500 600 
+Wire Notes Line
+	7500 600  6650 600 
+Wire Wire Line
+	10300 4050 10000 4050
+Wire Wire Line
+	10000 3850 10300 3850
+Wire Notes Line
+	9850 600  9850 5950
+Wire Notes Line
+	9850 5950 10950 5950
+Wire Notes Line
+	10950 5950 10950 600 
+Wire Notes Line
+	10950 600  9850 600 
+Wire Wire Line
+	10300 3650 10000 3650
+Connection ~ 10300 2350
+Wire Wire Line
+	10300 4250 10300 4450
+Wire Wire Line
+	6250 5900 6250 5750
+Wire Wire Line
+	5950 5550 5750 5550
+Wire Wire Line
+	6250 5350 6250 5200
+Wire Wire Line
+	6250 4400 6250 4900
+Connection ~ 6250 4650
+Wire Wire Line
+	6250 3900 6250 4100
+Wire Wire Line
+	5450 5550 5150 5550
+$Comp
+L +BATT #PWR05
+U 1 1 58EE6925
+P 6250 3900
+F 0 "#PWR05" H 6250 3750 50  0001 C CNN
+F 1 "+BATT" H 6250 4040 50  0000 C CNN
+F 2 "" H 6250 3900 50  0001 C CNN
+F 3 "" H 6250 3900 50  0001 C CNN
+	1    6250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR06
+U 1 1 58EE6DBF
+P 10300 2200
+F 0 "#PWR06" H 10300 2050 50  0001 C CNN
+F 1 "+BATT" H 10300 2340 50  0000 C CNN
+F 2 "" H 10300 2200 50  0001 C CNN
+F 3 "" H 10300 2200 50  0001 C CNN
+	1    10300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR07
+U 1 1 58EE9367
+P 8950 850
+F 0 "#PWR07" H 8950 700 50  0001 C CNN
+F 1 "+BATT" H 8950 990 50  0000 C CNN
+F 2 "" H 8950 850 50  0001 C CNN
+F 3 "" H 8950 850 50  0001 C CNN
+	1    8950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J6
+U 1 1 58EFD9C2
+P 10400 4900
+F 0 "J6" H 10400 5000 50  0000 C CNN
+F 1 "CONN_01X01" H 10600 4900 50  0000 C CNN
+F 2 "connectors:my_3.2mm_M3_Pad" H 10400 4900 50  0001 C CNN
+F 3 "" H 10400 4900 50  0001 C CNN
+	1    10400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J7
+U 1 1 58EFDA8C
+P 10400 5100
+F 0 "J7" H 10400 5200 50  0000 C CNN
+F 1 "CONN_01X01" H 10600 5100 50  0000 C CNN
+F 2 "connectors:my_3.2mm_M3_Pad" H 10400 5100 50  0001 C CNN
+F 3 "" H 10400 5100 50  0001 C CNN
+	1    10400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J8
+U 1 1 58EFDB09
+P 10400 5300
+F 0 "J8" H 10400 5400 50  0000 C CNN
+F 1 "CONN_01X01" H 10600 5300 50  0000 C CNN
+F 2 "connectors:my_3.2mm_M3_Pad" H 10400 5300 50  0001 C CNN
+F 3 "" H 10400 5300 50  0001 C CNN
+	1    10400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J9
+U 1 1 58EFDB89
+P 10400 5500
+F 0 "J9" H 10400 5600 50  0000 C CNN
+F 1 "CONN_01X01" H 10600 5500 50  0000 C CNN
+F 2 "connectors:my_3.2mm_M3_Pad" H 10400 5500 50  0001 C CNN
+F 3 "" H 10400 5500 50  0001 C CNN
+	1    10400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4900 10150 4900
+Wire Wire Line
+	10150 4900 10150 5650
+Wire Wire Line
+	10200 5100 10150 5100
+Connection ~ 10150 5100
+Wire Wire Line
+	10200 5300 10150 5300
+Connection ~ 10150 5300
+Wire Wire Line
+	10200 5500 10150 5500
+Connection ~ 10150 5500
+$Comp
+L GND #PWR08
+U 1 1 58EFDEB8
+P 10150 5650
+F 0 "#PWR08" H 10150 5400 50  0001 C CNN
+F 1 "GND" H 10150 5500 50  0000 C CNN
+F 2 "" H 10150 5650 50  0001 C CNN
+F 3 "" H 10150 5650 50  0001 C CNN
+	1    10150 5650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1100 9750 1100
+Wire Wire Line
+	9750 2100 7050 2100
+$Comp
+L VCC #PWR09
+U 1 1 58EE7927
+P 3800 6150
+F 0 "#PWR09" H 3800 6000 50  0001 C CNN
+F 1 "VCC" H 3800 6300 50  0000 C CNN
+F 2 "" H 3800 6150 50  0001 C CNN
+F 3 "" H 3800 6150 50  0001 C CNN
+	1    3800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR010
+U 1 1 58EE78D6
+P 4300 6150
+F 0 "#PWR010" H 4300 6000 50  0001 C CNN
+F 1 "+BATT" H 4300 6290 50  0000 C CNN
+F 2 "" H 4300 6150 50  0001 C CNN
+F 3 "" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6150 4300 6300
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 58EE78CF
+P 4300 6300
+F 0 "#FLG011" H 4300 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 6450 50  0000 C CNN
+F 2 "" H 4300 6300 50  0001 C CNN
+F 3 "" H 4300 6300 50  0001 C CNN
+	1    4300 6300
+	-1   0    0    1   
+$EndComp
+Connection ~ 4300 6750
+Wire Wire Line
+	4300 6700 4300 7000
+Wire Wire Line
+	3800 6150 3800 6300
+$Comp
+L GND #PWR012
+U 1 1 58C0744A
+P 4300 7000
+F 0 "#PWR012" H 4300 6750 50  0001 C CNN
+F 1 "GND" H 4300 6850 50  0000 C CNN
+F 2 "" H 4300 7000 50  0001 C CNN
+F 3 "" H 4300 7000 50  0001 C CNN
+	1    4300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 58C057C2
+P 3800 6300
+F 0 "#FLG013" H 3800 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 6450 50  0000 C CNN
+F 2 "" H 3800 6300 50  0001 C CNN
+F 3 "" H 3800 6300 50  0001 C CNN
+	1    3800 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG014
+U 1 1 58C0578A
+P 4300 6700
+F 0 "#FLG014" H 4300 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 6850 50  0000 C CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 2050 0    60   ~ 0
+This is the loading to use the board just as a switch - without any regulation.\nComponents not shown are not loaded.\nA wire must be run from the Q2 gate (use R6 pad) to the Q3 collector (use Q1 pin 1) 
+$EndSCHEMATC
