@@ -412,7 +412,7 @@ F 1 "Screw_Terminal_1x02" V 10350 2800 50  0000 C TNN
 F 2 "ab2_terminal_block:AB2_TB_02_RA_5.08MM_L-GRN" H 10500 2575 50  0001 C CNN
 F 3 "" H 10475 2800 50  0001 C CNN
 	1    10500 2800
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Text Notes 6700 3000 0    60   ~ 0
 Gate Drive

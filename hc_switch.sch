@@ -70,7 +70,7 @@ L R R13
 U 1 1 58C062A2
 P 7050 1800
 F 0 "R13" V 7130 1800 50  0000 C CNN
-F 1 "560R" V 7050 1800 50  0000 C CNN
+F 1 "1.5k" V 7050 1800 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6980 1800 50  0001 C CNN
 F 3 "" H 7050 1800 50  0001 C CNN
 	1    7050 1800
@@ -135,7 +135,7 @@ F 1 "Screw_Terminal_1x02" V 10350 2800 50  0000 C TNN
 F 2 "ab2_terminal_block:AB2_TB_02_RA_5.08MM_L-GRN" H 10500 2575 50  0001 C CNN
 F 3 "" H 10475 2800 50  0001 C CNN
 	1    10500 2800
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Text Notes 9200 800  0    60   ~ 0
 Power
