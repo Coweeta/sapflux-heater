@@ -118,6 +118,7 @@ F 0 "D2" H 7050 1500 50  0000 C CNN
 F 1 "LED" H 7050 1300 50  0000 C CNN
 F 2 "LEDs:LED_D3.0mm" H 7050 1400 50  0001 C CNN
 F 3 "" H 7050 1400 50  0001 C CNN
+F 4 "Lumex/SLX-LX3044HD" H 7050 1400 60  0001 C CNN "Mouser"
 	1    7050 1400
 	0    -1   -1   0   
 $EndComp
@@ -140,6 +141,7 @@ F 0 "Q2" H 9100 4675 50  0000 L CNN
 F 1 "irfb7546pbf" H 9000 4950 50  0000 L CNN
 F 2 "connectors:TO-220_Underneath" H 9100 4525 50  0001 L CIN
 F 3 "" H 8850 4600 50  0001 L CNN
+F 4 "Infineon/IRFB7546PBF,Nexperia/BUK758R3-40E127" H 8850 4600 60  0001 C CNN "Mouser"
 	1    8850 4600
 	1    0    0    -1  
 $EndComp
@@ -207,6 +209,7 @@ F 0 "U2" H 4050 4300 50  0000 L CNN
 F 1 "LM358" H 4050 3900 50  0000 L CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 4050 4100 50  0001 C CNN
 F 3 "" H 4050 4100 50  0001 C CNN
+F 4 "Fairchild-Semiconductor/LM358AN" H 4050 4100 60  0001 C CNN "Mouser"
 	2    4050 4100
 	1    0    0    1   
 $EndComp
@@ -218,6 +221,7 @@ F 0 "U2" H 3950 1700 50  0000 L CNN
 F 1 "LM358" H 3950 1300 50  0000 L CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3950 1500 50  0001 C CNN
 F 3 "" H 3950 1500 50  0001 C CNN
+F 4 "Fairchild-Semiconductor/LM358AN" H 3950 1500 60  0001 C CNN "Mouser"
 	1    3950 1500
 	-1   0    0    -1  
 $EndComp
@@ -229,6 +233,7 @@ F 0 "U1" H 1350 2050 50  0000 C CNN
 F 1 "TL431LP" H 1450 1850 50  0000 C CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 1450 1800 50  0001 C CIN
 F 3 "" H 1450 1950 50  0001 C CNN
+F 4 "Texas-Instruments/TL431ACLPR" H 1450 1950 60  0001 C CNN "Mouser"
 	1    1450 1950
 	0    -1   -1   0   
 $EndComp
@@ -262,6 +267,7 @@ F 0 "RV1" V 1725 1950 50  0000 C CNN
 F 1 "10k" V 1800 1950 50  0000 C CNN
 F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 1900 1950 50  0001 C CNN
 F 3 "" H 1900 1950 50  0001 C CNN
+F 4 "Bourns/3296W-1-103LF" V 1900 1950 60  0001 C CNN "Mouser"
 	1    1900 1950
 	1    0    0    -1  
 $EndComp
@@ -306,6 +312,7 @@ F 0 "C2" H 2325 2300 50  0000 L CNN
 F 1 "10n" H 2325 2100 50  0000 L CNN
 F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2338 2050 50  0001 C CNN
 F 3 "" H 2300 2200 50  0001 C CNN
+F 4 "TDK/FG18C0G2A103JRT06" H 2300 2200 60  0001 C CNN "Mouser"
 	1    2300 2200
 	1    0    0    -1  
 $EndComp
@@ -389,6 +396,7 @@ F 0 "J1" H 10500 1850 50  0000 C TNN
 F 1 "Screw_Terminal_1x02" V 10350 1600 50  0000 C TNN
 F 2 "connectors:screw_term_2x_5.08MM" H 10500 1375 50  0001 C CNN
 F 3 "" H 10475 1600 50  0001 C CNN
+F 4 "Phoenix-Contact/1985946" H 10500 1600 60  0001 C CNN "Mouser"
 	1    10500 1600
 	-1   0    0    -1  
 $EndComp
@@ -400,6 +408,7 @@ F 0 "J2" H 10500 3050 50  0000 C TNN
 F 1 "Screw_Terminal_1x02" V 10350 2800 50  0000 C TNN
 F 2 "connectors:screw_term_2x_5.08MM" H 10500 2575 50  0001 C CNN
 F 3 "" H 10475 2800 50  0001 C CNN
+F 4 "Phoenix-Contact/1985946" H 10500 2800 60  0001 C CNN "Mouser"
 	1    10500 2800
 	-1   0    0    1   
 $EndComp
@@ -456,6 +465,7 @@ F 0 "J3" H 10500 4400 50  0000 C TNN
 F 1 "Screw_Terminal_1x04" V 10350 3950 50  0000 C TNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 10500 3525 50  0001 C CNN
 F 3 "" H 10475 4150 50  0001 C CNN
+F 4 "Phoenix-Contact/1725672" H 10500 3950 60  0001 C CNN "Mouser"
 	1    10500 3950
 	-1   0    0    1   
 $EndComp
@@ -467,6 +477,7 @@ F 0 "J4" H 10500 2450 50  0000 C CNN
 F 1 "CONN_01X01" V 10700 2350 50  0000 C CNN
 F 2 "connectors:SolderWirePad_single_1-5mmDrill" H 10500 2350 50  0001 C CNN
 F 3 "" H 10500 2350 50  0001 C CNN
+F 4 "no part" H 10500 2350 60  0001 C CNN "Loading"
 	1    10500 2350
 	1    0    0    -1  
 $EndComp
@@ -478,6 +489,7 @@ F 0 "J5" H 10000 4350 50  0000 C CNN
 F 1 "CONN_01X01" V 10200 4250 50  0000 C CNN
 F 2 "connectors:small_SWP_single_1-5mmDrill" H 10000 4250 50  0001 C CNN
 F 3 "" H 10000 4250 50  0001 C CNN
+F 4 "no part" H 10000 4250 60  0001 C CNN "Loading"
 	1    10000 4250
 	0    1    1    0   
 $EndComp
@@ -489,6 +501,7 @@ F 0 "Q3" H 2050 6825 50  0000 L CNN
 F 1 "BC337" H 2050 6750 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2050 6675 50  0001 L CIN
 F 3 "" H 1850 6750 50  0001 L CNN
+F 4 "Taiwan-Semiconductor/BC337-16-A1" H 1850 6750 60  0001 C CNN "Mouser"
 	1    1850 6750
 	1    0    0    -1  
 $EndComp
@@ -497,9 +510,10 @@ L Q_PNP_EBC Q4
 U 1 1 58EE3129
 P 2550 5850
 F 0 "Q4" H 2750 5900 50  0000 L CNN
-F 1 "CMPT3906" H 2700 5650 50  0000 L CNN
+F 1 "2N5401-T" H 2700 5650 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2750 5950 50  0001 C CNN
 F 3 "" H 2550 5850 50  0001 C CNN
+F 4 "Rectron/2N5401-T,Central-Semiconductor/2N5401" H 2550 5850 60  0001 C CNN "Mouser"
 	1    2550 5850
 	1    0    0    1   
 $EndComp
@@ -669,7 +683,7 @@ F 0 "R6" V 6930 5500 50  0000 C CNN
 F 1 "0R" V 6850 5500 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6780 5500 50  0001 C CNN
 F 3 "" H 6850 5500 50  0001 C CNN
-F 4 "true" V 6850 5500 60  0001 C CNN "not fitted"
+F 4 "not fitted" V 6750 5500 60  0000 C CNN "Loading"
 	1    6850 5500
 	-1   0    0    1   
 $EndComp
@@ -681,6 +695,7 @@ F 0 "J6" H 10400 5600 50  0000 C CNN
 F 1 "CONN_01X01" H 10600 5500 50  0000 C CNN
 F 2 "connectors:SolderWirePad_single_1-5mmDrill" H 10400 5500 50  0001 C CNN
 F 3 "" H 10400 5500 50  0001 C CNN
+F 4 "no part" H 10400 5500 60  0001 C CNN "Loading"
 	1    10400 5500
 	1    0    0    -1  
 $EndComp
@@ -709,6 +724,7 @@ F 0 "J10" H 10100 2450 50  0000 C CNN
 F 1 "CONN_01X01" V 10300 2350 50  0000 C CNN
 F 2 "connectors:small_SWP_single_1-5mmDrill" H 10100 2350 50  0001 C CNN
 F 3 "" H 10100 2350 50  0001 C CNN
+F 4 "no part" H 10100 2350 60  0001 C CNN "Loading"
 	1    10100 2350
 	-1   0    0    1   
 $EndComp
@@ -717,9 +733,10 @@ L D_Zener D4
 U 1 1 5921DF04
 P 9350 1500
 F 0 "D4" H 9350 1600 50  0000 C CNN
-F 1 "D_Zener" H 9350 1400 50  0000 C CNN
+F 1 "1.5KE18A" H 9350 1400 50  0000 C CNN
 F 2 "connectors:D_DO-201_P12.70mm_Horizontal-round" H 9350 1500 50  0001 C CNN
 F 3 "" H 9350 1500 50  0001 C CNN
+F 4 "Littelfuse/15KE18A" H 9350 1500 60  0001 C CNN "Mouser"
 	1    9350 1500
 	0    1    1    0   
 $EndComp
@@ -980,9 +997,10 @@ L D D3
 U 1 1 5929051A
 P 8950 1600
 F 0 "D3" H 8950 1700 50  0000 C CNN
-F 1 "D" H 8950 1500 50  0000 C CNN
+F 1 "FR154-B" H 8950 1500 50  0000 C CNN
 F 2 "connectors:D_DO-15_P10.16mm_Horizontal_round" H 8950 1600 50  0001 C CNN
 F 3 "" H 8950 1600 50  0001 C CNN
+F 4 "Rectron/RL153-B" H 8950 1600 60  0001 C CNN "Mouser"
 	1    8950 1600
 	0    1    1    0   
 $EndComp
@@ -990,10 +1008,11 @@ $Comp
 L D_Zener D1
 U 1 1 5921DDF8
 P 9400 4600
-F 0 "D1" H 9400 4700 50  0000 C CNN
-F 1 "D_Zener" H 9400 4500 50  0000 C CNN
+F 0 "D1" H 9500 4650 50  0000 C CNN
+F 1 "TVS" H 9400 4500 50  0000 C CNN
 F 2 "connectors:D_DO-15_P10.16mm_Horizontal_round" H 9400 4600 50  0001 C CNN
 F 3 "" H 9400 4600 50  0001 C CNN
+F 4 "not fitted" H 9400 4750 60  0000 C CNN "Loading"
 	1    9400 4600
 	0    1    1    0   
 $EndComp
@@ -1005,6 +1024,7 @@ F 0 "J7" H 10400 5350 50  0000 C CNN
 F 1 "CONN_01X01" H 10600 5250 50  0000 C CNN
 F 2 "connectors:my_3.2mm_M3_Pad" H 10400 5250 50  0001 C CNN
 F 3 "" H 10400 5250 50  0001 C CNN
+F 4 "no part" H 10400 5250 60  0001 C CNN "Loading"
 	1    10400 5250
 	1    0    0    -1  
 $EndComp
