@@ -33,7 +33,7 @@
   )
 
   (setup
-    (last_trace_width 2.286)
+    (last_trace_width 0.254)
     (user_trace_width 0.254)
     (user_trace_width 0.508)
     (user_trace_width 1.524)
@@ -66,7 +66,7 @@
     (grid_origin 134.239 47.117)
     (visible_elements FFFEFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory sapflux_controller/))
+      (outputdirectory v1.1/))
   )
 
   (net 0 "")
@@ -1604,7 +1604,7 @@
   (segment (start 153.289 73.787) (end 153.289 69.977) (width 0.508) (layer F.Cu) (net 1))
   (segment (start 153.289 69.977) (end 149.479 69.977) (width 0.508) (layer B.Cu) (net 1))
   (segment (start 156.591 84.455) (end 156.591 89.789) (width 1.524) (layer F.Cu) (net 2))
-  (segment (start 156.591 89.789) (end 157.734 90.932) (width 1.524) (layer F.Cu) (net 2) (tstamp 592C0B57) (status 800000))
+  (segment (start 156.591 89.789) (end 157.734 90.932) (width 1.524) (layer F.Cu) (net 2) (tstamp 592C0B57))
   (segment (start 158.289 78.613) (end 158.623 78.947) (width 0.508) (layer F.Cu) (net 2))
   (segment (start 158.289 78.613) (end 158.289 73.787) (width 0.508) (layer F.Cu) (net 2) (tstamp 592B842A))
   (segment (start 158.623 78.947) (end 158.623 82.169) (width 0.508) (layer F.Cu) (net 2) (tstamp 592B842C))
@@ -1738,7 +1738,7 @@
   (segment (start 163.449 63.627) (end 162.179 64.897) (width 0.508) (layer B.Cu) (net 14))
   (segment (start 162.179 64.897) (end 160.909 64.897) (width 0.508) (layer B.Cu) (net 14) (tstamp 592B7D33))
   (segment (start 163.449 63.627) (end 164.719 62.357) (width 0.508) (layer B.Cu) (net 14) (tstamp 58F0BB8E))
-  (segment (start 156.464 100.457) (end 157.099 99.822) (width 2.286) (layer B.Cu) (net 15) (status C00000))
+  (segment (start 156.464 100.457) (end 157.099 99.822) (width 2.286) (layer B.Cu) (net 15))
   (segment (start 157.353 93.853) (end 157.861 94.361) (width 0.508) (layer F.Cu) (net 15))
   (segment (start 156.464 100.457) (end 157.861 99.06) (width 0.508) (layer F.Cu) (net 15))
   (segment (start 157.861 99.06) (end 157.861 94.361) (width 0.508) (layer F.Cu) (net 15) (tstamp 592B7DFD))

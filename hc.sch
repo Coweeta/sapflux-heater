@@ -233,7 +233,7 @@ F 0 "U1" H 1350 2050 50  0000 C CNN
 F 1 "TL431LP" H 1450 1850 50  0000 C CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 1450 1800 50  0001 C CIN
 F 3 "" H 1450 1950 50  0001 C CNN
-F 4 "Texas-Instruments/TL431ACLPR" H 1450 1950 60  0001 C CNN "Mouser"
+F 4 "Texas-Instruments/TL431ACLPR,STMicroelectronics/TL431CZ-AP" H 1450 1950 60  0001 C CNN "Mouser"
 	1    1450 1950
 	0    -1   -1   0   
 $EndComp
