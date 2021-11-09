@@ -30,7 +30,7 @@ The system needs to have some resilience to lightning strikes.
 
 - PCB size 1.5" by 2.5"
 
-Developed using KiCAD (http://kicad-pcb.org/).
+Developed using KiCAD (http://kicad.org/).
 
 Inline-style:
 ![front view of loaded PCB](generated/front_view.jpg "front view of loaded PCB")
