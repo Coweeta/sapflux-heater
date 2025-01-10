@@ -20,7 +20,7 @@ The system needs to have some resilience to lightning strikes.
 - Input voltage range 12V to 15V DC
 - Output voltage adjustable from 15V down to 3V
 - Power disipation around 10W - depending on heatsink size
-- Maximum continue current 10A - depending on power dissipation
+- Maximum continual current 10A - depending on power dissipation
 - Maximum induced current from a 1/100us lightning pulse: 70A
 
 - Can be enabled with signal from 2V to 15V, disabled below 1V
